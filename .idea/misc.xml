@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$PROJECT_DIR$/empty-start/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-base/pom.xml" />
+        <option value="$PROJECT_DIR$/sample-01/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

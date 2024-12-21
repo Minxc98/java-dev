@@ -1,34 +1,31 @@
 package com.example.kafkabase.Initial;
 
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
-import static com.example.kafkabase.config.KafkaConfig.TOPIC_N;
-
 @Component
-public class KafkaSender {
+public class KafkaSender implements InitializingBean {
 
     @Autowired
-    private KafkaTemplate kafkaTemplate;
+    private KafkaTemplate<Object,Object> kafkaTemplate;
 
-    public void sendMes() throws InterruptedException {
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 1, 0L,
-                TimeUnit.MILLISECONDS,
-                new ArrayBlockingQueue<>(10),
-                new ThreadPoolExecutor.CallerRunsPolicy());
-        while (true) {
-            executor.submit(()->{
-                kafkaTemplate.send(TOPIC_N, "hello world");
-            });
-            TimeUnit.SECONDS.sleep(1);
-        }
+
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+//        ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 1, 0L,
+//                TimeUnit.MILLISECONDS,
+//                new ArrayBlockingQueue<>(10),
+//                new ThreadPoolExecutor.CallerRunsPolicy());
+//        while (true) {
+//            executor.submit(()->{
+//                System.out.println("sender send info");
+//                kafkaTemplate.send(TOPIC_N, new MoneyMessage(1L, 100L, LocalDate.now()));
+//            });
+//            TimeUnit.SECONDS.sleep(2);
+//        }
 
     }
-
-
 }
