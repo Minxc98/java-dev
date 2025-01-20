@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.shardingspherebase.dao.ClientConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.shardingspherebase.entity.ClientConfig">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="client_id" property="clientId" jdbcType="VARCHAR"/>
+        <result column="ds_name" property="dsName" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="findByClientId" resultMap="BaseResultMap">
+        SELECT * FROM client_config WHERE client_id = #{clientId}
+    </select>
+</mapper>

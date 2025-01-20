@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/database-es-base/pom.xml" />
         <option value="$PROJECT_DIR$/database-redis-base/pom.xml" />
         <option value="$PROJECT_DIR$/database-redis-redisson/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-sphere-jdbc-base-2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
