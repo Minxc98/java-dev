@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/database-redis-base/pom.xml" />
         <option value="$PROJECT_DIR$/database-redis-redisson/pom.xml" />
         <option value="$PROJECT_DIR$/sharding-sphere-jdbc-base-2/pom.xml" />
+        <option value="$PROJECT_DIR$/database-base/pom.xml" />
+        <option value="$PROJECT_DIR$/database-hazelcast/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -21,7 +23,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
