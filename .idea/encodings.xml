@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/database-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database-es-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database-hazelcast/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database-mongodb-base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database-mybatis-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database-redis-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database-redis-redisson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/empty-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/examples/shardingsphere-jdbc-example-generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/examples/shardingsphere-jdbc-example-generator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/examples/shardingsphere-parser-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/examples/shardingsphere-parser-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/examples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-jdbc-base-2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sharding-sphere-jdbc-base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />

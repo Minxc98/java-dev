@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"  # 映射主机的27017端口到容器的27017端口
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root  # 设置根用户
+      MONGO_INITDB_ROOT_PASSWORD: 123456  # 设置根用户密码

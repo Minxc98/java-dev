@@ -1,0 +1,1 @@
+es客户端的版本对spring boot的版本有要求，有可能发生不兼容的情况 --https://docs.spring.io/spring-data/elasticsearch/docs/4.2.4/reference/html/#preface.requirements

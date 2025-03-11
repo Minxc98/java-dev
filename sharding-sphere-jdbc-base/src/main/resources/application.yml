@@ -27,6 +27,10 @@ spring:
           key-generator:
             column: order_id
             type: SNOWFLAKE
+          database-strategy:
+            inline:
+              algorithm-expression: ds$->{order_id % 2}
+              sharding-column: order_id
           table-strategy:
             inline:
               algorithm-expression: t_order$->{order_id % 2}

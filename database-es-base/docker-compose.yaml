@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    image: elasticsearch:7.12.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+#      - ELASTIC_PASSWORD=your_password  # 设置 Elasticsearch 的管理员密码
+    ports:
+      - "9200:9200"
+    networks:
+      - esnet
+
+networks:
+  esnet:
+    driver: bridge
