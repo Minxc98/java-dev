@@ -1,0 +1,27 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-webflux
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      POSTGRES_USER:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+  redis:
+    image: redis:latest
+    container_name: redis-webflux
+    ports:
+      - "6379:6379"
+    networks:
+      - redisnet
+    command: [ "redis-server", "--requirepass", "123123", "--user", "pick", "on" ]
+
+networks:
+  redisnet:
+    driver: bridge

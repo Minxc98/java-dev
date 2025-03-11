@@ -7,11 +7,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$PROJECT_DIR$/empty-start/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-base/pom.xml" />
+        <option value="$PROJECT_DIR$/web-flux-base/pom.xml" />
+        <option value="$PROJECT_DIR$/webflux-databse/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-r2dbc-postgresql-example-master/pom.xml" />
+        <option value="$PROJECT_DIR$/graphQL-base/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/database/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-r2dbc-postgresql-example-master/pom.xml" />
       </set>
     </option>
   </component>
