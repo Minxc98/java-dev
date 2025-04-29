@@ -6,15 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/database/pom.xml" />
-        <option value="$PROJECT_DIR$/sharding-sphere-base/pom.xml" />
-        <option value="$PROJECT_DIR$/examples/pom.xml" />
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
-        <option value="$PROJECT_DIR$/database-es-base/pom.xml" />
-        <option value="$PROJECT_DIR$/database-redis-base/pom.xml" />
-        <option value="$PROJECT_DIR$/database-redis-redisson/pom.xml" />
-        <option value="$PROJECT_DIR$/sharding-sphere-jdbc-base-2/pom.xml" />
-        <option value="$PROJECT_DIR$/database-base/pom.xml" />
-        <option value="$PROJECT_DIR$/database-hazelcast/pom.xml" />
+        <option value="$PROJECT_DIR$/empty-start/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-base/pom.xml" />
+        <option value="$PROJECT_DIR$/web-flux-base/pom.xml" />
+        <option value="$PROJECT_DIR$/webflux-databse/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-r2dbc-postgresql-example-master/pom.xml" />
+        <option value="$PROJECT_DIR$/graphQL-base/pom.xml" />
+        <option value="$PROJECT_DIR$/database-clickhouse-base/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -23,7 +21,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  zookeeper:
+    image: zookeeper:3.7
+    ports:
+      - "2181:2181"
+
+  clickhouse-s1-r1:
+    image: clickhouse/clickhouse-server:24.9.3.128
+    environment:
+      CLICKHOUSE_MACROS: 'shard=01&replica=01'  # 分片1副本1标识[9](@ref)
+      CLICKHOUSE_INTERSERVER_HTTP_HOST: clickhouse-s1-r1  # 内部通信地址[9](@ref)
+    depends_on:
+      - zookeeper
+
+  clickhouse-s1-r2:
+    image: clickhouse/clickhouse-server:24.9.3.128
+    environment:
+      CLICKHOUSE_MACROS: 'shard=01&replica=02'  # 分片1副本2标识[9](@ref)
+      CLICKHOUSE_INTERSERVER_HTTP_HOST: clickhouse-s1-r2
+    depends_on:
+      - zookeeper
+
+  clickhouse-s2-r1:
+    image: clickhouse/clickhouse-server:24.9.3.128
+    environment:
+      CLICKHOUSE_MACROS: 'shard=02&replica=01'  # 分片2副本1标识[9](@ref)
+      CLICKHOUSE_INTERSERVER_HTTP_HOST: clickhouse-s2-r1
+    depends_on:
+      - zookeeper
+
+  clickhouse-s2-r2:
+    image: clickhouse/clickhouse-server:24.9.3.128
+    environment:
+      CLICKHOUSE_MACROS: 'shard=02&replica=02'  # 分片2副本2标识[9](@ref)
+      CLICKHOUSE_INTERSERVER_HTTP_HOST: clickhouse-s2-r2
+    depends_on:
+      - zookeeper
