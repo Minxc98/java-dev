@@ -13,7 +13,7 @@
     <module>database-mybatis-base</module>
     <module>sharding-sphere-jdbc-base</module>
     <module>database-mongodb-base</module>
-    <module>database-flyway-base</module>
+    <module>database-flyway-mybatis-flex-base</module>
   </modules>
 
 
